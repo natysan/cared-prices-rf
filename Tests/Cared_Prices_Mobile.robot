@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation  chequea que la app se pueda descargar y este disponible
+Documentation  verifies that the Precios Cuidados app is available and can be downloaded
 Resource  ../Resources/Common.robot
 Resource  ../Resources/CaredPrices.robot
 Test Setup  Begin Test

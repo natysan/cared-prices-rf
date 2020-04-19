@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.2 on darwin)" generated="20200409 16:07:03.811" rpa="false">
+<suite id="s1" name="Cared Prices Mobile" source="/Users/natysan/my_projects/cared_prices/cared-prices-rf/tests/Cared_Prices_Mobile.robot">
+<test id="s1-t1" name="Precios Cuidados landing page is displayed correctly">
+<kw name="Begin Test" library="Common" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200409 16:07:04.041" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20200409 16:07:04.041" endtime="20200409 16:07:05.833"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200409 16:07:05.834" endtime="20200409 16:07:05.969"></status>
+</kw>
+<status status="PASS" starttime="20200409 16:07:04.040" endtime="20200409 16:07:05.969"></status>
+</kw>
+<kw name="Navigate to Precios Cuidados" library="Landing">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${CARED_PRICES_URL}</arg>
+</arguments>
+<msg timestamp="20200409 16:07:05.970" level="INFO">Opening url 'https://www.argentina.gob.ar/precios-cuidados'</msg>
+<status status="PASS" starttime="20200409 16:07:05.970" endtime="20200409 16:07:06.733"></status>
+</kw>
+<status status="PASS" starttime="20200409 16:07:05.970" endtime="20200409 16:07:06.733"></status>
+</kw>
+<kw name="Landing page for Precios Cuidados should be rendered correctly" library="Landing">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Precios Cuidados</arg>
+</arguments>
+<status status="PASS" starttime="20200409 16:07:06.734" endtime="20200409 16:07:06.751"></status>
+</kw>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="block-system-main"]/div[1]/div/section/div[3]/div/div/div/a</arg>
+</arguments>
+<msg timestamp="20200409 16:07:06.765" level="INFO">Current page contains link 'xpath=//*[@id="block-system-main"]/div[1]/div/section/div[3]/div/div/div/a'.</msg>
+<status status="PASS" starttime="20200409 16:07:06.752" endtime="20200409 16:07:06.765"></status>
+</kw>
+<kw name="Page Should Contain Image" library="SeleniumLibrary">
+<doc>Verifies image identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="block-system-main"]/div[1]/div/section/div[3]/div/div/div/p[1]/img</arg>
+</arguments>
+<msg timestamp="20200409 16:07:06.781" level="INFO">Current page contains image 'xpath=//*[@id="block-system-main"]/div[1]/div/section/div[3]/div/div/div/p[1]/img'.</msg>
+<status status="PASS" starttime="20200409 16:07:06.765" endtime="20200409 16:07:06.781"></status>
+</kw>
+<status status="PASS" starttime="20200409 16:07:06.733" endtime="20200409 16:07:06.781"></status>
+</kw>
+<kw name="End Test" library="Common" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200409 16:07:06.781" endtime="20200409 16:07:06.850"></status>
+</kw>
+<status status="PASS" starttime="20200409 16:07:06.781" endtime="20200409 16:07:06.850"></status>
+</kw>
+<status status="PASS" starttime="20200409 16:07:04.040" endtime="20200409 16:07:06.850" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Precios Cuidados app download page is displayed correctly after clicking DESCARGA LA APLICACION">
+<kw name="Begin Test" library="Common" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200409 16:07:06.852" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20200409 16:07:06.852" endtime="20200409 16:07:08.582"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200409 16:07:08.583" endtime="20200409 16:07:08.705"></status>
+</kw>
+<status status="PASS" starttime="20200409 16:07:06.852" endtime="20200409 16:07:08.705"></status>
+</kw>
+<kw name="Navigate to Precios Cuidados" library="Landing">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${CARED_PRICES_URL}</arg>
+</arguments>
+<msg timestamp="20200409 16:07:08.706" level="INFO">Opening url 'https://www.argentina.gob.ar/precios-cuidados'</msg>
+<status status="PASS" starttime="20200409 16:07:08.706" endtime="20200409 16:07:10.814"></status>
+</kw>
+<status status="PASS" starttime="20200409 16:07:08.705" endtime="20200409 16:07:10.814"></status>
+</kw>
+<kw name="Landing page for Precios Cuidados should be rendered correctly" library="Landing">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Precios Cuidados</arg>
+</arguments>
+<status status="PASS" starttime="20200409 16:07:10.815" endtime="20200409 16:07:10.829"></status>
+</kw>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="block-system-main"]/div[1]/div/section/div[3]/div/div/div/a</arg>
+</arguments>
+<msg timestamp="20200409 16:07:10.842" level="INFO">Current page contains link 'xpath=//*[@id="block-system-main"]/div[1]/div/section/div[3]/div/div/div/a'.</msg>
+<status status="PASS" starttime="20200409 16:07:10.829" endtime="20200409 16:07:10.842"></status>
+</kw>
+<kw name="Page Should Contain Image" library="SeleniumLibrary">
+<doc>Verifies image identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="block-system-main"]/div[1]/div/section/div[3]/div/div/div/p[1]/img</arg>
+</arguments>
+<msg timestamp="20200409 16:07:10.855" level="INFO">Current page contains image 'xpath=//*[@id="block-system-main"]/div[1]/div/section/div[3]/div/div/div/p[1]/img'.</msg>
+<status status="PASS" starttime="20200409 16:07:10.842" endtime="20200409 16:07:10.856"></status>
+</kw>
+<status status="PASS" starttime="20200409 16:07:10.814" endtime="20200409 16:07:10.856"></status>
+</kw>
+<kw name="Click on DESCARGA LA APLICACION" library="Landing">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="block-system-main"]/div[1]/div/section/div[3]/div/div/div/a</arg>
+</arguments>
+<msg timestamp="20200409 16:07:10.856" level="INFO">Clicking element 'xpath=//*[@id="block-system-main"]/div[1]/div/section/div[3]/div/div/div/a'.</msg>
+<status status="PASS" starttime="20200409 16:07:10.856" endtime="20200409 16:07:11.802"></status>
+</kw>
+<status status="PASS" starttime="20200409 16:07:10.856" endtime="20200409 16:07:11.802"></status>
+</kw>
+<kw name="Landing page for Precios Cuidados should be rendered correctly" library="DownloadMobile">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Ahora podés tener precios cuidados en tu celular.</arg>
+</arguments>
+<status status="PASS" starttime="20200409 16:07:11.803" endtime="20200409 16:07:11.814"></status>
+</kw>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="block-system-main"]/section/article/div/div[7]/div/div/div[1]/p/a</arg>
+</arguments>
+<msg timestamp="20200409 16:07:11.827" level="INFO">Current page contains link 'xpath=//*[@id="block-system-main"]/section/article/div/div[7]/div/div/div[1]/p/a'.</msg>
+<status status="PASS" starttime="20200409 16:07:11.814" endtime="20200409 16:07:11.827"></status>
+</kw>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="block-system-main"]/section/article/div/div[7]/div/div/div[2]/p/a</arg>
+</arguments>
+<msg timestamp="20200409 16:07:11.839" level="INFO">Current page contains link 'xpath=//*[@id="block-system-main"]/section/article/div/div[7]/div/div/div[2]/p/a'.</msg>
+<status status="PASS" starttime="20200409 16:07:11.827" endtime="20200409 16:07:11.839"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="block-system-main"]/section/article/div/div[7]/div/div/div[1]/h1/i</arg>
+</arguments>
+<msg timestamp="20200409 16:07:11.847" level="INFO">Current page contains element 'xpath=//*[@id="block-system-main"]/section/article/div/div[7]/div/div/div[1]/h1/i'.</msg>
+<status status="PASS" starttime="20200409 16:07:11.839" endtime="20200409 16:07:11.848"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="block-system-main"]/section/article/div/div[7]/div/div/div[2]/h1/i</arg>
+</arguments>
+<msg timestamp="20200409 16:07:11.856" level="INFO">Current page contains element 'xpath=//*[@id="block-system-main"]/section/article/div/div[7]/div/div/div[2]/h1/i'.</msg>
+<status status="PASS" starttime="20200409 16:07:11.848" endtime="20200409 16:07:11.856"></status>
+</kw>
+<status status="PASS" starttime="20200409 16:07:11.802" endtime="20200409 16:07:11.856"></status>
+</kw>
+<kw name="End Test" library="Common" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200409 16:07:11.857" endtime="20200409 16:07:11.931"></status>
+</kw>
+<status status="PASS" starttime="20200409 16:07:11.857" endtime="20200409 16:07:11.932"></status>
+</kw>
+<status status="PASS" starttime="20200409 16:07:06.851" endtime="20200409 16:07:11.932" critical="yes"></status>
+</test>
+<test id="s1-t3" name="Precios Cuidados app available for download on Google Play for Android devices">
+<kw name="Begin Test" library="Common" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200409 16:07:11.933" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20200409 16:07:11.933" endtime="20200409 16:07:13.666"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200409 16:07:13.666" endtime="20200409 16:07:13.788"></status>
+</kw>
+<status status="PASS" starttime="20200409 16:07:11.933" endtime="20200409 16:07:13.789"></status>
+</kw>
+<kw name="Navigate to Precios Cuidados" library="Landing">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${CARED_PRICES_URL}</arg>
+</arguments>
+<msg timestamp="20200409 16:07:13.790" level="INFO">Opening url 'https://www.argentina.gob.ar/precios-cuidados'</msg>
+<status status="PASS" starttime="20200409 16:07:13.789" endtime="20200409 16:07:14.519"></status>
+</kw>
+<status status="PASS" starttime="20200409 16:07:13.789" endtime="20200409 16:07:14.519"></status>
+</kw>
+<kw name="Landing page for Precios Cuidados should be rendered correctly" library="Landing">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Precios Cuidados</arg>
+</arguments>
+<status status="PASS" starttime="20200409 16:07:14.520" endtime="20200409 16:07:14.535"></status>
+</kw>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="block-system-main"]/div[1]/div/section/div[3]/div/div/div/a</arg>
+</arguments>
+<msg timestamp="20200409 16:07:14.547" level="INFO">Current page contains link 'xpath=//*[@id="block-system-main"]/div[1]/div/section/div[3]/div/div/div/a'.</msg>
+<status status="PASS" starttime="20200409 16:07:14.535" endtime="20200409 16:07:14.547"></status>
+</kw>
+<kw name="Page Should Contain Image" library="SeleniumLibrary">
+<doc>Verifies image identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="block-system-main"]/div[1]/div/section/div[3]/div/div/div/p[1]/img</arg>
+</arguments>
+<msg timestamp="20200409 16:07:14.560" level="INFO">Current page contains image 'xpath=//*[@id="block-system-main"]/div[1]/div/section/div[3]/div/div/div/p[1]/img'.</msg>
+<status status="PASS" starttime="20200409 16:07:14.548" endtime="20200409 16:07:14.560"></status>
+</kw>
+<status status="PASS" starttime="20200409 16:07:14.520" endtime="20200409 16:07:14.560"></status>
+</kw>
+<kw name="Click on DESCARGA LA APLICACION" library="Landing">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="block-system-main"]/div[1]/div/section/div[3]/div/div/div/a</arg>
+</arguments>
+<msg timestamp="20200409 16:07:14.561" level="INFO">Clicking element 'xpath=//*[@id="block-system-main"]/div[1]/div/section/div[3]/div/div/div/a'.</msg>
+<status status="PASS" starttime="20200409 16:07:14.561" endtime="20200409 16:07:16.052"></status>
+</kw>
+<status status="PASS" starttime="20200409 16:07:14.561" endtime="20200409 16:07:16.052"></status>
+</kw>
+<kw name="Landing page for Precios Cuidados should be rendered correctly" library="DownloadMobile">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Ahora podés tener precios cuidados en tu celular.</arg>
+</arguments>
+<status status="PASS" starttime="20200409 16:07:16.053" endtime="20200409 16:07:16.065"></status>
+</kw>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="block-system-main"]/section/article/div/div[7]/div/div/div[1]/p/a</arg>
+</arguments>
+<msg timestamp="20200409 16:07:16.079" level="INFO">Current page contains link 'xpath=//*[@id="block-system-main"]/section/article/div/div[7]/div/div/div[1]/p/a'.</msg>
+<status status="PASS" starttime="20200409 16:07:16.065" endtime="20200409 16:07:16.079"></status>
+</kw>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="block-system-main"]/section/article/div/div[7]/div/div/div[2]/p/a</arg>
+</arguments>
+<msg timestamp="20200409 16:07:16.091" level="INFO">Current page contains link 'xpath=//*[@id="block-system-main"]/section/article/div/div[7]/div/div/div[2]/p/a'.</msg>
+<status status="PASS" starttime="20200409 16:07:16.079" endtime="20200409 16:07:16.092"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="block-system-main"]/section/article/div/div[7]/div/div/div[1]/h1/i</arg>
+</arguments>
+<msg timestamp="20200409 16:07:16.100" level="INFO">Current page contains element 'xpath=//*[@id="block-system-main"]/section/article/div/div[7]/div/div/div[1]/h1/i'.</msg>
+<status status="PASS" starttime="20200409 16:07:16.092" endtime="20200409 16:07:16.100"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="block-system-main"]/section/article/div/div[7]/div/div/div[2]/h1/i</arg>
+</arguments>
+<msg timestamp="20200409 16:07:16.109" level="INFO">Current page contains element 'xpath=//*[@id="block-system-main"]/section/article/div/div[7]/div/div/div[2]/h1/i'.</msg>
+<status status="PASS" starttime="20200409 16:07:16.100" endtime="20200409 16:07:16.109"></status>
+</kw>
+<status status="PASS" starttime="20200409 16:07:16.053" endtime="20200409 16:07:16.109"></status>
+</kw>
+<kw name="Click on DESCARGAR for Android" library="DownloadMobile">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="block-system-main"]/section/article/div/div[7]/div/div/div[1]/p/a</arg>
+</arguments>
+<msg timestamp="20200409 16:07:16.109" level="INFO">Clicking link 'xpath=//*[@id="block-system-main"]/section/article/div/div[7]/div/div/div[1]/p/a'.</msg>
+<status status="PASS" starttime="20200409 16:07:16.109" endtime="20200409 16:07:17.891"></status>
+</kw>
+<status status="PASS" starttime="20200409 16:07:16.109" endtime="20200409 16:07:17.891"></status>
+</kw>
+<kw name="Android Google Play store is rendered" library="DownloadMobile">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="gbq1"]/div/a/img</arg>
+</arguments>
+<msg timestamp="20200409 16:07:17.904" level="INFO">Current page contains element 'xpath=//*[@id="gbq1"]/div/a/img'.</msg>
+<status status="PASS" starttime="20200409 16:07:17.892" endtime="20200409 16:07:17.904"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Precios Cuidados</arg>
+</arguments>
+<status status="PASS" starttime="20200409 16:07:17.904" endtime="20200409 16:07:17.919"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Presidencia de la Nación Argentina</arg>
+</arguments>
+<status status="PASS" starttime="20200409 16:07:17.919" endtime="20200409 16:07:17.945"></status>
+</kw>
+<status status="PASS" starttime="20200409 16:07:17.892" endtime="20200409 16:07:17.945"></status>
+</kw>
+<kw name="End Test" library="Common" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200409 16:07:17.946" endtime="20200409 16:07:18.021"></status>
+</kw>
+<status status="PASS" starttime="20200409 16:07:17.945" endtime="20200409 16:07:18.021"></status>
+</kw>
+<status status="PASS" starttime="20200409 16:07:11.932" endtime="20200409 16:07:18.021" critical="yes"></status>
+</test>
+<test id="s1-t4" name="Precios Cuidados app available for download on App Store for iOS devices">
+<kw name="Begin Test" library="Common" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200409 16:07:18.022" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20200409 16:07:18.022" endtime="20200409 16:07:19.747"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200409 16:07:19.747" endtime="20200409 16:07:19.868"></status>
+</kw>
+<status status="PASS" starttime="20200409 16:07:18.022" endtime="20200409 16:07:19.869"></status>
+</kw>
+<kw name="Navigate to Precios Cuidados" library="Landing">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${CARED_PRICES_URL}</arg>
+</arguments>
+<msg timestamp="20200409 16:07:19.870" level="INFO">Opening url 'https://www.argentina.gob.ar/precios-cuidados'</msg>
+<status status="PASS" starttime="20200409 16:07:19.869" endtime="20200409 16:07:20.636"></status>
+</kw>
+<status status="PASS" starttime="20200409 16:07:19.869" endtime="20200409 16:07:20.636"></status>
+</kw>
+<kw name="Landing page for Precios Cuidados should be rendered correctly" library="Landing">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Precios Cuidados</arg>
+</arguments>
+<status status="PASS" starttime="20200409 16:07:20.637" endtime="20200409 16:07:20.650"></status>
+</kw>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="block-system-main"]/div[1]/div/section/div[3]/div/div/div/a</arg>
+</arguments>
+<msg timestamp="20200409 16:07:20.663" level="INFO">Current page contains link 'xpath=//*[@id="block-system-main"]/div[1]/div/section/div[3]/div/div/div/a'.</msg>
+<status status="PASS" starttime="20200409 16:07:20.650" endtime="20200409 16:07:20.663"></status>
+</kw>
+<kw name="Page Should Contain Image" library="SeleniumLibrary">
+<doc>Verifies image identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="block-system-main"]/div[1]/div/section/div[3]/div/div/div/p[1]/img</arg>
+</arguments>
+<msg timestamp="20200409 16:07:20.676" level="INFO">Current page contains image 'xpath=//*[@id="block-system-main"]/div[1]/div/section/div[3]/div/div/div/p[1]/img'.</msg>
+<status status="PASS" starttime="20200409 16:07:20.663" endtime="20200409 16:07:20.676"></status>
+</kw>
+<status status="PASS" starttime="20200409 16:07:20.636" endtime="20200409 16:07:20.677"></status>
+</kw>
+<kw name="Click on DESCARGA LA APLICACION" library="Landing">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="block-system-main"]/div[1]/div/section/div[3]/div/div/div/a</arg>
+</arguments>
+<msg timestamp="20200409 16:07:20.678" level="INFO">Clicking element 'xpath=//*[@id="block-system-main"]/div[1]/div/section/div[3]/div/div/div/a'.</msg>
+<status status="PASS" starttime="20200409 16:07:20.677" endtime="20200409 16:07:22.198"></status>
+</kw>
+<status status="PASS" starttime="20200409 16:07:20.677" endtime="20200409 16:07:22.198"></status>
+</kw>
+<kw name="Landing page for Precios Cuidados should be rendered correctly" library="DownloadMobile">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Ahora podés tener precios cuidados en tu celular.</arg>
+</arguments>
+<status status="PASS" starttime="20200409 16:07:22.199" endtime="20200409 16:07:22.211"></status>
+</kw>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="block-system-main"]/section/article/div/div[7]/div/div/div[1]/p/a</arg>
+</arguments>
+<msg timestamp="20200409 16:07:22.224" level="INFO">Current page contains link 'xpath=//*[@id="block-system-main"]/section/article/div/div[7]/div/div/div[1]/p/a'.</msg>
+<status status="PASS" starttime="20200409 16:07:22.212" endtime="20200409 16:07:22.224"></status>
+</kw>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="block-system-main"]/section/article/div/div[7]/div/div/div[2]/p/a</arg>
+</arguments>
+<msg timestamp="20200409 16:07:22.237" level="INFO">Current page contains link 'xpath=//*[@id="block-system-main"]/section/article/div/div[7]/div/div/div[2]/p/a'.</msg>
+<status status="PASS" starttime="20200409 16:07:22.225" endtime="20200409 16:07:22.237"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="block-system-main"]/section/article/div/div[7]/div/div/div[1]/h1/i</arg>
+</arguments>
+<msg timestamp="20200409 16:07:22.245" level="INFO">Current page contains element 'xpath=//*[@id="block-system-main"]/section/article/div/div[7]/div/div/div[1]/h1/i'.</msg>
+<status status="PASS" starttime="20200409 16:07:22.237" endtime="20200409 16:07:22.245"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>xpath=//*[@id="block-system-main"]/section/article/div/div[7]/div/div/div[2]/h1/i</arg>
+</arguments>
+<msg timestamp="20200409 16:07:22.254" level="INFO">Current page contains element 'xpath=//*[@id="block-system-main"]/section/article/div/div[7]/div/div/div[2]/h1/i'.</msg>
+<status status="PASS" starttime="20200409 16:07:22.245" endtime="20200409 16:07:22.254"></status>
+</kw>
+<status status="PASS" starttime="20200409 16:07:22.198" endtime="20200409 16:07:22.254"></status>
+</kw>
+<kw name="Click on DESCARGAR for Apple" library="DownloadMobile">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="block-system-main"]/section/article/div/div[7]/div/div/div[2]/p/a</arg>
+</arguments>
+<msg timestamp="20200409 16:07:22.255" level="INFO">Clicking link 'xpath=//*[@id="block-system-main"]/section/article/div/div[7]/div/div/div[2]/p/a'.</msg>
+<status status="PASS" starttime="20200409 16:07:22.255" endtime="20200409 16:07:24.411"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>30s</arg>
+</arguments>
+<msg timestamp="20200409 16:07:54.413" level="INFO">Slept 30 seconds</msg>
+<status status="PASS" starttime="20200409 16:07:24.411" endtime="20200409 16:07:54.413"></status>
+</kw>
+<status status="PASS" starttime="20200409 16:07:22.254" endtime="20200409 16:07:54.413"></status>
+</kw>
+<kw name="iOS App Store is rendered" library="DownloadMobile">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>App Store</arg>
+</arguments>
+<status status="PASS" starttime="20200409 16:07:54.414" endtime="20200409 16:07:54.428"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Presidencia de la Nación Argentina</arg>
+</arguments>
+<status status="PASS" starttime="20200409 16:07:54.428" endtime="20200409 16:07:54.439"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Precios Cuidados Argentina</arg>
+</arguments>
+<status status="PASS" starttime="20200409 16:07:54.439" endtime="20200409 16:07:54.449"></status>
+</kw>
+<status status="PASS" starttime="20200409 16:07:54.413" endtime="20200409 16:07:54.449"></status>
+</kw>
+<kw name="End Test" library="Common" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200409 16:07:54.449" endtime="20200409 16:07:54.530"></status>
+</kw>
+<status status="PASS" starttime="20200409 16:07:54.449" endtime="20200409 16:07:54.530"></status>
+</kw>
+<status status="PASS" starttime="20200409 16:07:18.021" endtime="20200409 16:07:54.530" critical="yes"></status>
+</test>
+<doc>chequea que la app se pueda descargar y este disponible</doc>
+<status status="PASS" starttime="20200409 16:07:03.813" endtime="20200409 16:07:54.531"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0">Critical Tests</stat>
+<stat pass="4" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" id="s1" name="Cared Prices Mobile">Cared Prices Mobile</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
