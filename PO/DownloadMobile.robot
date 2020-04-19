@@ -2,24 +2,27 @@
 Library  SeleniumLibrary
 
 *** Variables ***
-
+${DOWNLOAD_BUTTON_ANDROID} =  xpath=//div[@id="block-system-main"]//div[contains(@class,"pane-campo")]//a/i[contains(@class,"android")]/..
+${DOWNLOAD_BUTTON_IOS} =  xpath=//div[@id="block-system-main"]//div[contains(@class,"pane-campo")]//a/i[contains(@class,"apple")]/..
+${ANDROID_LOGO} =  css=div[id="block-system-main"] div[class*="pane-campo"] h1>i[class*="android"]
+${GOOGLE_PLAY_STORE_OF_LOGO} =  xpath=//*[@id="gbq1"]/div/a/img
+${IOS_LOGO} =  css=div[id="block-system-main"] div[class*="pane-campo"] h1>i[class*="apple"]
 
 *** Keywords ***
 Landing page for Precios Cuidados should be rendered correctly
     Wait Until Page Contains  Ahora podés tener precios cuidados en tu celular.
-    Page Should Contain Link  xpath=//*[@id="block-system-main"]/section/article/div/div[7]/div/div/div[1]/p/a
-    Page Should Contain Link  xpath=//*[@id="block-system-main"]/section/article/div/div[7]/div/div/div[2]/p/a
-    Page Should Contain Element  xpath=//*[@id="block-system-main"]/section/article/div/div[7]/div/div/div[1]/h1/i
-    Page Should Contain Element  xpath=//*[@id="block-system-main"]/section/article/div/div[7]/div/div/div[2]/h1/i
+    Page Should Contain Link  ${DOWNLOAD_BUTTON_ANDROID}
+    Page Should Contain Link  ${DOWNLOAD_BUTTON_IOS}
+    Page Should Contain Element  ${ANDROID_LOGO}
+    Page Should Contain Element  ${IOS_LOGO}
 
 
 Click on DESCARGAR for Android
-    Click Link  xpath=//*[@id="block-system-main"]/section/article/div/div[7]/div/div/div[1]/p/a
+    Click Link  ${DOWNLOAD_BUTTON_ANDROID}
 
 
 Click on DESCARGAR for Apple
-    Click Link  xpath=//*[@id="block-system-main"]/section/article/div/div[7]/div/div/div[2]/p/a
-    Sleep  30s
+    Click Link  ${DOWNLOAD_BUTTON_IOS}
 
 
 iOS App Store is rendered
@@ -29,7 +32,7 @@ iOS App Store is rendered
 
 
 Android Google Play store is rendered
-    Page Should Contain Element  xpath=//*[@id="gbq1"]/div/a/img
+    Page Should Contain Element  ${GOOGLE_PLAY_STORE_OF_LOGO}
     Wait Until Page Contains  Precios Cuidados
     Wait Until Page Contains  Presidencia de la Nación Argentina
 
